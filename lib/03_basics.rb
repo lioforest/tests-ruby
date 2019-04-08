@@ -62,11 +62,11 @@ def magic_array(argument)
 	resultat = argument.flatten
 	resultat = resultat.sort
 	resultat = resultat.uniq
-
-	puts resultat
+	resultat = resultat.map { |n| n * 2 }
+	resultat = resultat.delete_if { |e| e%3==0 }
+	return resultat
 
 
 		
 end
 
-magic_array([1, [2, 3], 4, 5, 6, 23, 31, [1, 2, 3]])
