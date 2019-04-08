@@ -3,37 +3,10 @@ def translate(valeur)
     longueur=0
 	
 
-	resultat = text.split(" ")
-
-	puts resultat
-
-	
 
 # cas 1 : le mot commence par une voyelle / # cas 2 : le mot commence par une consomne
 
   
-		  if valeu[0..2] = "sch" then
-
-				longueur = valeur.length-1
-				resultat = "#{valeur[3..longueur]}#{valeur[0..2]}ay"
-
-
-		  	else
-				  	
-				 if valeu[0..1] = "qu" then
-
-						longueur = valeur.length-1
-						resultat = "#{valeur[2..longueur]}#{valeur[0..1]}ay"
-
-				else
-
-					 if valeu[0..2] = "squ" then
-
-						longueur = valeur.length-1
-						resultat = "#{valeur[3..longueur]}#{valeur[0..2]}ay"
-
-					else
-
 					  	# je teste si la première lettre une voyelle
 					  	if valeur[0] == "a" || valeur[0] == "e" || valeur[0] == "i" || valeur[0] == "o" || valeur[0] == "u" then
 					    
@@ -74,13 +47,6 @@ def translate(valeur)
 					     		end
 
 						end
-
-					end
-
-				 end
-				  	
-		  
-			end	  	
 
 return resultat
 # cas 3 : le mot commence par deux consomnes
